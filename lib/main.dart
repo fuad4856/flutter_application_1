@@ -1,38 +1,49 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyWidget());
 }
 
-class MyApp extends StatelessWidget {
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MainPage(),
-    );
-  }
-}
-
-class MainPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Star Rating Example'),
-      ),
-      body: Center(
-        child: Container(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Icon(Icons.star, color: Colors.yellow, size: 50),
-              Icon(Icons.star, color: Colors.yellow, size: 50),
-              Icon(Icons.star, color: Colors.black, size: 50),
-              Icon(Icons.star, color: Colors.black, size: 50),
-              Icon(Icons.star, color: Colors.black, size: 50),
-            ],
-          ),
+      title: "Flutter project",
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Star Widget"),
+        ),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            Icon(
+              Icons.star,
+              color: Colors.yellow,
+              size: 70,
+            ),
+            Icon(
+              Icons.star,
+              color: Colors.yellow,
+              size: 70,
+            ),
+            Icon(
+              Icons.star,
+              color: Colors.grey,
+              size: 70,
+            ),
+            Icon(
+              Icons.star,
+              color: Colors.grey,
+              size: 70,
+            ),
+            Icon(
+              Icons.star,
+              color: Colors.grey,
+              size: 70,
+            ),
+          ],
         ),
       ),
     );
