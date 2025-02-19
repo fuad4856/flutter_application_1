@@ -21,15 +21,18 @@ class MainPage extends StatelessWidget {
         title: Text('Star Rating Example'),
       ),
       body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Icon(Icons.star, color: Colors.yellow, size: 50),
-            Icon(Icons.star, color: Colors.yellow, size: 50),
-            Icon(Icons.star, color: Colors.black, size: 50),
-            Icon(Icons.star, color: Colors.black, size: 50),
-            Icon(Icons.star, color: Colors.black, size: 50),
-          ],
+        child: Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Icon(Icons.star, color: Colors.yellow, size: 50),
+              Icon(Icons.star, color: Colors.yellow, size: 50),
+              Icon(Icons.star, color: Colors.black, size: 50),
+              Icon(Icons.star, color: Colors.black, size: 50),
+              Icon(Icons.star, color: Colors.black, size: 50),
+            ],
+          ),
         ),
       ),
     );
