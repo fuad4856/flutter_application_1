@@ -23,16 +23,13 @@ class MainPage extends StatelessWidget {
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: List.generate(5, (index) {
-            // Color logic for stars
-            Color starColor = index < 2 ? Colors.yellow : Colors.black;
-
-            return Icon(
-              Icons.star,
-              color: starColor,
-              size: 50,
-            );
-          }),
+          children: <Widget>[
+            Icon(Icons.star, color: Colors.yellow, size: 50),
+            Icon(Icons.star, color: Colors.yellow, size: 50),
+            Icon(Icons.star, color: Colors.black, size: 50),
+            Icon(Icons.star, color: Colors.black, size: 50),
+            Icon(Icons.star, color: Colors.black, size: 50),
+          ],
         ),
       ),
     );
